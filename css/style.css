@@ -1,0 +1,457 @@
+@import url('./Additional.css');
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  text-decoration:none;
+}
+.loader{
+	height:90vh;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background:#000;
+	z-index:1020;
+	display:grid;
+	place-items:center;
+}
+.loader .halfcircle{
+	width:230px;
+	height:100px;
+	background:none;
+	position:relative;
+	display:flex;
+	border:5px solid #0495ff;
+	align-items:center;
+	justify-content:center;
+	animation: borderani 3s linear infinite;
+	box-shadow:0 0 10px #0495ff,
+	         inset 0 0 10px #0495ff;
+}
+@keyframes borderani{
+	50%{
+		filter:hue-rotate(280deg);
+	}
+}
+.halfcircle .h{
+	margin-left:10px;
+	position:relative;
+	height:5px;
+	width:16px;
+	bottom:0;
+	background:#fff;
+ animation: ani 2s linear infinite;
+}
+.h1,
+.h7{
+	animation-delay:0.2!important;
+}
+.h2,
+.h6{
+	animation-delay:0.4s!important;
+}
+.h3,
+.h5{
+	animation-delay:0.6s!important;
+}
+.h4{
+	animation-delay:0.8s!important;
+}
+@keyframes ani{
+	50%{
+		height:60px;
+	}
+}
+
+html,
+body{
+  scroll-behavior:smooth;
+  font-family:var(--normal);
+}
+.section{
+  height:90vh;
+  width:100%;
+  position:relative;
+  text-align:center;
+}
+.t-batch{
+	pointer-events:none;
+	position:absolute;
+	overflow:hidden;
+	height:100px;
+	width:100px;
+  top:50px;
+  right:0;
+  z-index:890;
+}
+.batch{
+	position:absolute;
+	top:20px;
+  right:-40px;
+  background:black;
+  color:#fff;
+  z-index:889;
+  font-weight:bold;
+  padding:4px;
+  transform:rotate(40deg);
+  font-size:12px;
+  width:150px;
+  text-align:center;
+}
+.two .responsive img{
+  width:200px;
+}
+.one,
+.five,
+.three{
+ background:url("../loot/bg7.svg");
+  background-size:cover;
+  background-position:center;
+  color:#0495ff;
+}
+.three .responsive{
+	display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.three .t-btm,
+.three .t-top{
+	position:relative;
+	display:grid;
+	place-items:center;
+}
+.four{
+	background:#fff;
+}
+.four .top{
+	background:#fff;
+	color:#0495ff;
+	height:100%;
+	width:100%;
+	position:relative;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+.four .top .letspace{
+	position:relative;
+	display:grid;
+	place-items:center;
+	font-family:var(--bold);
+	font-size:30px;
+	text-shadow:0 0 2.5px #0495ff;
+}
+.four .top .imgspace{
+	position:relative;
+	display:grid;
+	place-items:center;
+}
+.four .top .letspace .h1bg{
+	background:none!important;
+	filter: drop-shadow(none);
+}
+.eb{
+filter:drop-shadow(0 0 0.5rem #0495ff);
+}
+.ew{
+filter:drop-shadow(0 0 0.5rem #fff);	
+}
+.responsive{
+  position:relative;
+  height:100%;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.m{
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  width:300px;
+  height:150px;
+  margin-top:-30px;
+  font-family:var(--sketch);
+}
+.hbg{
+  background:url('../loot/bg5.png');
+  background-size:cover;
+  background-position:center;
+  width:300px;
+  height:140px;
+  position:absolute;
+ filter: drop-shadow(0 0 0.75rem #333);
+}
+.m h2{
+  margin-top:25px;
+  position:absolute;
+  color:transparent;
+  background:linear-gradient(110deg,#7a7a7a, #3a3a3a, #050505, #565757);
+  -webkit-background-clip:text;
+}
+/* dot styling */
+ul li a.active span{
+  background:#000!important;
+}
+ul li a span{
+  background:none!important;
+  border:2px solid black!important;
+}
+ul li a span:hover{
+  background:#000!important;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:auto;
+  z-index:1010;
+  background:linear-gradient(130deg, #fff, #e8e8e8);
+  color:black;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 15px;
+  box-shadow:0 3px 10px #000;
+}
+.burger{
+  display:none;
+}
+.logo a{
+  font-size:25px;
+  color:#0495ff;
+  font-family:var(--royal);
+  letter-spacing:3px;
+  font-weight:bold;
+  text-shadow:0 0 2.5px #0495ff;
+}
+.navbar{
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+}
+header a{
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+}
+.one .captions{
+font-family:var(--bold);
+color:#fff;
+letter-spacing:2px;
+width:50%;
+text-align:center;
+}
+.three .m{
+	position:absolute!important;
+	top:25%;
+	left:50%;
+	transform:translate(-50%,-25%);
+}
+
+.two .responsive{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+.earthimg{
+	position:absolute;
+	display:grid;
+	place-items:center;
+}
+img.earth{
+	width:200px;
+	position:absolute;
+	z-index:2;
+}
+.earthimg h1{
+	position:absolute;
+	color:#fff;
+	text-shadow:0 0 3px #0495ff;
+	z-index:5;
+	font-family:var(--bold);
+}
+.five .responsive{
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.five .responsive .slide .ss{
+	display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto 1fr;
+  background:#fff;
+  box-shadow:5px 5px 6px #000;
+  border-radius:10px;
+}
+.five .responsive .slide .ss .top{
+	width:100%;
+	height:auto;
+	font-size:25px;
+	padding:6px;
+	color:#0495ff;
+	font-family:var(--sketch);
+}
+
+.ss{
+	width:250px;
+	height:250px;
+	margin:auto;
+	padding:15px;
+	position:relative;
+}
+.ss img{
+width: 80%;
+}
+
+.box{
+	display:grid;
+	place-items:center;
+}
+
+
+@media(max-width:420px){
+	
+.loader{
+	height:90vh;
+}
+	
+.five .responsive {
+grid-template-columns:1fr;
+grid-template-rows:1fr auto;
+}
+	
+.burger{
+  display:block;
+  width:30px;
+  height:25px;
+  position:relative;
+  left:0;
+}
+.line{
+  position:absolute;
+  width:100%;
+  height:4px;
+  border-radius:10px;
+  background:#0495ff;
+  box-shadow:0 0 2px #0495ff;
+  transition:0.3s ease;
+}
+.line:nth-child(1){
+  top:0;
+}
+.line:nth-child(2){
+  top:50%;
+  transform:translateY(-50%);
+}
+.line:nth-child(3){
+  bottom:0;
+}
+.burger.active .line:nth-child(2){
+  right:0;
+  top:50%;
+  transform:translate(38%,-50%) rotate(90deg);
+} 
+
+.burger.active .line:nth-child(1){
+  top:15%;
+  transform: translateY(-15%) rotate(-30deg);
+} 
+.burger.active .line:nth-child(3){
+  bottom:15%;
+  transform:translateY(-15%) rotate(30deg);
+} 
+.navbar{
+position:fixed;
+top:50px;
+left:0;
+width:100%;
+height:90vh;
+background:linear-gradient(130deg, #fff, #dadada);
+z-index:999;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+transform:translateX(100%);
+transition:transform 0.4s ease;
+}
+.navbar.active{
+transform:translateX(0%);
+}
+.navbar a{
+  padding:10px 30px;
+  margin:10px;
+  color:#0495ff;
+  font-size:30px;
+  position:relative;
+  overflow:hidden;
+  font-family:var(--royal);
+}
+.navbar a:before{
+  content:'';
+  position:absolute;
+  top:-16px;
+  left:0;
+  background:url('../loot/bg4.png');
+  width:0;
+  background-size:cover;
+  background-position:center;
+  height:70px;
+  transform:rotate(10deg);
+  z-index:-1;
+}
+.navbar a:hover{
+  color:#fff;
+  transition:color 0.5s ease;
+  text-shadow:0 0 2.5px #000;
+}
+.navbar a:hover:before{
+ width:100%;
+  transition:all 0.3s ease;
+}
+
+.four .top{
+	grid-template-rows:2fr 1fr;
+}
+.four .top,
+.three .responsive,
+.two .responsive{
+	grid-template-columns:1fr !important;
+}
+
+ 
+}
+
+
+@media(min-width:720px){
+	.atag{
+		overflow:hidden;
+		position:relative;
+		padding:5px;
+	}
+	.atag:before{
+	  position:absolute;
+	  content:'';
+	  bottom:0;
+	  left:0;
+	  width:100%;
+	  height:4px;
+	  background:#0495ff;
+	  transition:all 0.5s ease;
+	  transform:translateX(-100%);
+	}
+	.atag:hover:before{
+		transform:translateX(0);
+		color:#0495ff;
+	}
+}
+
+.disp{
+	display:none;
+}

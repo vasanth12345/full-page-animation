@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Open+Sans&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Shadows+Into+Light&display=swap');
+
+
+:root{
+--normal: 'Open Sans', sans-serif;
+--bold: 'Bebas Neue', cursive;
+--royal: 'Dancing Script', cursive;
+
+--style: 'Cinzel', serif;
+--sketch: 'Shadows Into Light', cursive;
+}
